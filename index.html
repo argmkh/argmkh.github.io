@@ -26,11 +26,12 @@
             background-size: cover;
         }
 
-        .link-box {
+        .copyrights {
             text-align: center;
             position: absolute;
             bottom: 5px;
             width: 100%;
+            color: white;
         }
 
         a {
@@ -61,10 +62,10 @@
 
 <body>
     <div class="box-image"></div>
-    <div class="link-box">
-        <a href="https://www.instagram.com/hagiwear/">Instagram</a>
-        <a href="https://www.instagram.com/hagiwear/">TikTok</a>
-        <a href="https://www.instagram.com/hagiwear/">Facebook</a>
-        <a href="https://www.instagram.com/hagiwear/">Treads</a>
-    </div>
+    <p class="copyrights">
+        All rights reserved &copy; <span id="year"></span> Հագի / Hagi
+    </p>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
